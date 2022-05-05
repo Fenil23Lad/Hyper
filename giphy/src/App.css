@@ -13,3 +13,20 @@ body{
 .gif{
     padding: 5px 5px;;
 }
+
+.col-auto{
+    margin: 10px;
+}
+
+/* CSS for title of the page */
+.title{
+     text-align: center;
+     font-size: 40px;
+        background-color: black;
+        background-size: cover;
+        position: relative;
+        text-transform: uppercase;
+        font-family: 'Rancho', cursive;
+        -webkit-background-clip: text;
+        color: transparent;
+}

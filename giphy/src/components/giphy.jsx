@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import axios from 'axios'
 
-// comment
 const Giphy = () => {
 
     const [data, setData] = useState([]);
@@ -72,12 +71,17 @@ const Giphy = () => {
     return (    
     <div className="m-2">
         {error()}
-        
-    <form className="form-inline justify-content-center m-2">
-        <input onChange={handleSearch} type="text" placeholder = "Search" className = "form-control"/>
-        <button onClick={handleSubmit} type="submit" className = "btn btn-primary mx-8">Search</button>
+
+    <div class="col-xl-5 col-lg-6 col-md-8 col-sm-10 mx-auto text-center form p-4">
+    <div class="px-2">    
+    <form className="justify-content-center">
+        <input onChange={handleSearch} type="text" placeholder = "Type here to Search" className = "col-auto my-1"/>
+        <button onClick={handleSubmit} type="submit" className = "btn btn-primary col-auto my-1">Search</button>
     </form>
-    
+    </div>
+    </div>
+
+    <div className="title">Top Trending GIFs</div>
     <div className="container gifs">
         {renderGIFs()}
         </div>
